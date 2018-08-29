@@ -1,0 +1,51 @@
+
+  <h1 id="title">EAT DA BURGER!</h1>
+
+  <img id="burger-img" src="/assets/images/burger.gif">
+
+
+      <div class="left">
+        <h5>BURGERS NOT YET DEVOURED</h5>
+
+        <ol>
+          {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devour=true}} {{/unless}} {{/each}}
+        </ol>
+      </div>
+
+      <div class="right">
+        <h5>DEVOURED BURGERS</h5>
+
+        <ol>
+          {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devour=false}} {{/if}} {{/each}}
+        </ol>
+      </div>
+
+  
+
+    <div class="down">
+        <h5>Add a burger</h5>
+
+
+        <form class="create-form">
+
+          <div class="form-group">
+            <label for="ca">Burger Name:</label>
+            <input type="text" id="ca" name="burger_name">
+          </div>
+
+          <button type="submit">Add burger</button>
+        </form>
+ 
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+  <audio id="tasty" src="/assets/sounds/tasty.mp3"></audio>
+  <audio id="crunch" src="/assets/sounds/crunch.mp3"></audio>

@@ -1,0 +1,6 @@
+{
+    "name": "EAT DA BURGER",
+    "description": "A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM",
+    "repository": "https://github.com/Nickmcd4/Burger/",
+    "keywords": ["burger", "handlebars","node", "eat", "da"]
+}
